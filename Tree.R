@@ -15,10 +15,7 @@ Tree = R6::R6Class("Tree",
       G = sum(grad)
       H = sum(hessian)
       best_gain = 0
-      best_feature_id = NULL
       best_val = 0
-      best_left_instance_ids = NULL
-      best_right_instance_ids = NULL
       for (feat in colnames(instances)) {
         G_l = 0
         H_l = 0
